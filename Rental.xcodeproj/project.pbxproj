@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		641F40292F13A3300067E31C /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 641F40282F13A3300067E31C /* Swinject */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		641F3FEF2F13A1A10067E31C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				641F40292F13A3300067E31C /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = Rental;
 			packageProductDependencies = (
+				641F40282F13A3300067E31C /* Swinject */,
 			);
 			productName = Rental;
 			productReference = 641F3FE12F13A19E0067E31C /* Rental.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 641F3FD82F13A19E0067E31C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				641F40272F13A3300067E31C /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 641F3FE22F13A19E0067E31C /* Products */;
 			projectDirPath = "";
@@ -578,6 +587,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		641F40272F13A3300067E31C /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		641F40282F13A3300067E31C /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 641F40272F13A3300067E31C /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 641F3FD92F13A19E0067E31C /* Project object */;
 }
